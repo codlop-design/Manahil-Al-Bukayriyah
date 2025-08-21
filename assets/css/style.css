@@ -2129,7 +2129,7 @@ input[type=number] {
   gap: 20px;
   position: absolute;
   bottom: 50px;
-  right: 200px;
+  right: 250px;
   z-index: 999999;
 }
 
@@ -2355,3 +2355,6 @@ input[type=number] {
   height: 50px;
   object-fit: contain;
 }
+
+
+
