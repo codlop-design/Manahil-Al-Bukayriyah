@@ -590,6 +590,13 @@ hr {
   border: 1px solid #ddd;
 }
 
+.book_dive {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .book_img {
   height: 20px;
   object-fit: contain;
@@ -2093,6 +2100,7 @@ input[type=number] {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   row-gap: 25px;
+  margin-top: 30px;
 }
 
 .card_blog {
@@ -2115,15 +2123,10 @@ input[type=number] {
 }
 
 .blog_titels {
-
-  padding: 10px 15px;
-
+  padding: 15px;
   display: flex;
-
   flex-direction: column;
-
   gap: 10px;
-
   height: 100%;
 }
 
@@ -2183,4 +2186,103 @@ input[type=number] {
 
 .date_div .span_num {
   font-size: 20px;
+}
+
+.flex_pattern_titel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.flex_pattern_titel img {
+  height: 30px;
+  object-fit: contain;
+}
+
+.flex_pattern_titel h1 {
+  margin: 0;
+  color: #443417;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.flex_blog_book {
+  display: flex;
+  gap: 35px;
+  margin-top: 25px;
+}
+
+.flex_blog_book .book_items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  position: relative;
+  border-right: 2px solid #ddd;
+}
+
+.flex_blog_book .book_items::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background: #F9F4EC;
+  top: 0;
+  right: 10px;
+  z-index: -1;
+  border-radius: 40px;
+  width: 33.33%;
+}
+
+
+.flex_blog_book .book_items img {
+  height: 100px;
+  margin-top: -200px;
+}
+
+.book_titling {
+  position: relative;
+}
+
+.book_titling ::after{
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  right: 18px;
+  top: -10px;
+  background: #725727;
+}
+
+.flex_blog_book .book_titling h2 {
+  margin: 0;
+  color: #725727;
+  font-weight: 600;
+  font-size: 25px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+}
+
+
+.flex_blog_book .book_items .book_description {
+  font-size: 20px;
+  line-height: 170%;
+  padding-right: 25px;
+}
+
+.persons_img {
+  width: 500px;
+  min-width: 500px;
+}
+
+.persons_img img {
+  width: 100%;
+  border-radius: 5px;
+  border-right: 2px solid #C8A951;
+  border-bottom: 2px solid #C8A951;
+  padding: 0px 7px 7px 0px;
 }
