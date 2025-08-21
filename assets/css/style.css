@@ -776,6 +776,16 @@ hr {
   font-size: 19px;
   line-height: 150%;
   z-index: -1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  transition-delay: 0s;
+}
+
+.card_content:hover .p_details {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
 }
 
 

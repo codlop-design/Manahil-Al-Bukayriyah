@@ -339,7 +339,7 @@
 
                 </div>
             </div> -->
-            <marquee behavior="scroll" direction="left" scrollamount="20">
+            <marquee id="brands" behavior="scroll" direction="left" scrollamount="20">
                 <div class="grid_imges">
                     <img src="assets/img/clints_brand/1.png">
                     <img src="assets/img/clints_brand/2.png">
@@ -468,7 +468,7 @@
                         <div class="swiper-slide">
                             <div class="advantage_card">
                                 <div class="img_div">
-                                    <img src="assets/img/advantages/7.png">
+                                    <img src="assets/img/advantages/8.png">
                                 </div>
                                 <h1 class="advantage_main">الشراكة مع الأسرة</h1>
                                 <div class="advantage_description">
@@ -482,7 +482,7 @@
                         <div class="swiper-slide">
                             <div class="advantage_card">
                                 <div class="img_div">
-                                    <img src="assets/img/advantages/8.png">
+                                    <img src="assets/img/advantages/9.png">
                                 </div>
                                 <h1 class="advantage_main">الأنشطة والإثراء</h1>
                                 <div class="advantage_description">
@@ -635,8 +635,8 @@
 
         });
     </script>
-
-    <!-- <script>
+    <!-- 
+    <script>
         var swiper = new Swiper(".clients_slider", {
             slidesPerView: 5,
             spaceBetween: 15,
@@ -647,6 +647,20 @@
 
         });
     </script> -->
+
+    <script>
+        const marquee = document.getElementById("brands");
+        const images = marquee.querySelectorAll("img");
+
+        images.forEach(img => {
+            img.addEventListener("mouseenter", () => {
+                marquee.stop();
+            });
+            img.addEventListener("mouseleave", () => {
+                marquee.start();
+            });
+        });
+    </script>
 
     <script>
         var swiper = new Swiper(".advantages_swiper", {
