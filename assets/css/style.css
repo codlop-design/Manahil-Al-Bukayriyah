@@ -353,6 +353,10 @@ hr {
   object-fit: cover;
   object-position: center;
   margin: auto;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
 }
 
 .grid_img .small_img {
@@ -362,6 +366,48 @@ hr {
   object-fit: cover;
   object-position: center;
   margin: auto;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* حركة من فوق */
+.grid_img .top {
+  animation-name: moveFromTop;
+}
+
+/* حركة من تحت */
+.grid_img .bottom {
+  animation-name: moveFromBottom;
+}
+
+/* keyframes */
+@keyframes moveFromTop {
+  0% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(30px);
+  }
 }
 
 .content_hero_section {
@@ -2247,7 +2293,7 @@ input[type=number] {
   position: relative;
 }
 
-.book_titling ::after{
+.book_titling ::after {
   position: absolute;
   content: "";
   width: 12px;
