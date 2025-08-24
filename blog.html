@@ -121,6 +121,7 @@
                 <div class="flex_swiper_buttons">
                     <div class="next_button"><i class="bi bi-caret-right"></i></div>
                     <div class="prev_button"><i class="bi bi-caret-left"></i></div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
             </div>
@@ -382,9 +383,10 @@
         var swiper = new Swiper(".blog_slidre", {
             spaceBetween: 30,
             centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
+
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
             },
 
             navigation: {
