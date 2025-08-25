@@ -599,6 +599,7 @@ hr {
   padding-top: 10px;
   color: rgba(114, 87, 39, 0.70);
   font-size: 17px;
+  line-height: 150%;
 }
 
 .flex_platformes {
@@ -734,7 +735,9 @@ hr {
   margin: 0;
   color: #443417;
   font-size: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
+  text-align: center;
+  line-height: 150%;
 }
 
 .h1_style {
@@ -1273,6 +1276,7 @@ hr {
   align-items: center;
   gap: 10px;
   font-size: 16px;
+  flex-wrap: wrap;
 }
 
 .breadcramb_url {
@@ -1532,6 +1536,7 @@ hr {
 
 .flex_up_div .titles p {
   font-size: 18px;
+  text-align: center;
 }
 
 .grid_img_activites {
@@ -1576,6 +1581,7 @@ hr {
   font-size: 21px;
   font-weight: 500;
   color: #010F1C;
+  text-align: center;
 }
 
 .activte_div p {
@@ -1590,7 +1596,7 @@ hr {
 .section_grid_imgs {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 100px);
+  /* grid-template-rows: repeat(6, 100px); */
   gap: 16px;
 }
 
@@ -1792,12 +1798,12 @@ hr {
 }
 
 .content_itmes_checks h1 {
-
   margin: 0;
   color: #212121;
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 25px;
+  line-height: 150%;
 }
 
 .checks_div {
@@ -1815,6 +1821,7 @@ hr {
 .span_i {
   background: #5e4823;
   width: 25px;
+  min-width: 25px;
   height: 25px;
   border-radius: 50%;
   display: flex;
@@ -2406,11 +2413,63 @@ input[type=number] {
     max-width: 100%;
     padding: 0px 50px;
   }
+
+  .flex_pattern_titel h1 {
+    font-size: 21px;
+  }
+
+  .flex_blog_book .book_titling h2 {
+    font-size: 21px;
+    padding-right: 36px;
+    padding-bottom: 18px;
+  }
+
+  .flex_blog_book .book_items .book_description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:1300px) {
+  .flex_blog_book .book_titling h2 {
+    font-size: 19px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+  }
+
+  .flex_blog_book .book_items img {
+    height: 80px;
+    margin-top: -145px;
+  }
+
+  .persons_img {
+    width: 400px;
+    min-width: 400px;
+  }
 }
 
 @media (max-width:1260px) {
   .bg_Register_now {
     width: 80%;
+  }
+}
+
+
+@media (max-width:1200px) {
+  .slider_blog .titels h1 {
+    font-size: 20px;
+  }
+
+  .slider_blog .titels {
+    gap: 15px;
+  }
+
+  .slider_blog .titels h2 {
+    font-size: 19px;
+  }
+
+  .slider_blog .titels .description {
+    font-size: 18px;
+
   }
 }
 
@@ -2480,6 +2539,65 @@ input[type=number] {
   .advantage_card .img_div img {
     height: 60px;
   }
+
+  .col_footer_logo img {
+    height: 65px;
+  }
+
+  .col_footer_logo p {
+    font-size: 16px;
+  }
+
+  .grid_content_footer {
+    gap: 18px;
+  }
+
+  .col_footer .main_footer_title {
+    font-size: 17px;
+  }
+
+  .main_footer_title {
+    font-size: 17px;
+
+  }
+
+  .socail_icons a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .socail_icons a i {
+    font-size: 16px;
+  }
+
+  .grid_content_footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .support_section .left_side {
+    width: 370px;
+  }
+
+  .flex_blog_book .book_items .book_description {
+    font-size: 17px;
+  }
+
+  .flex_blog_book .book_items::after {
+    border-radius: 25px;
+  }
+
+  .flex_pattern_titel img {
+    height: 25px;
+  }
+
+  .flex_blog_book .book_items::after {
+    width: 45%;
+  }
+
+  .flex_blog_book .book_items img {
+    margin-top: -115px;
+    margin-right: 60px;
+  }
 }
 
 @media (max-width:1024px) {
@@ -2509,6 +2627,263 @@ input[type=number] {
 
   .advantage_card .img_div img {
     height: 50px;
+  }
+
+  .ref_details .name_card,
+  .ref_details .show_details {
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .card_content img {
+    border-radius: 15px;
+  }
+
+  .h1_style {
+    font-size: 20px;
+    padding-bottom: 19px;
+  }
+
+  .card_content .p_details {
+    font-size: 18px;
+  }
+
+  .ref_details .name_card,
+  .ref_details .show_details {
+    font-size: 18px;
+  }
+
+  .h1_style {
+    font-size: 21px;
+    padding-bottom: 18px;
+  }
+
+  .support_section .left_side h2 {
+    font-size: 19px;
+  }
+
+  .support_section .right_side h1 {
+    font-size: 21px;
+  }
+
+  .support_section .right_side p {
+    font-size: 18px;
+    width: 450px;
+  }
+
+  .support_section .left_side img {
+    height: 280px;
+  }
+
+  .support_section {
+    gap: 25px;
+  }
+
+  .Educational_platforms h1 {
+    font-size: 19px;
+  }
+
+  .logo_school {
+    padding: 2px 8px;
+    height: 55px;
+  }
+
+  .paltform_content {
+    padding: 20px 15px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+  .paltform_content h3 {
+    font-size: 18px;
+  }
+
+  .div_book {
+    width: 45px;
+    height: 45px;
+  }
+
+  .who_benfit .main_titel {
+    font-size: 21px;
+  }
+
+  .small_icon_titel {
+    width: 90px;
+    height: 90px;
+
+  }
+
+  .small_icon_titel {
+    gap: 2px;
+  }
+
+  .small_icon_titel span {
+    font-size: 17px;
+  }
+
+  .right_postion {
+    height: 40px;
+  }
+
+  .last_postion {
+    height: 55px;
+    left: -41px;
+  }
+
+  .grid_benfits .benfits_content:nth-child(2) {
+    margin-top: 125px;
+  }
+
+  .flex_itms_div {
+    gap: 25px;
+  }
+
+  .content_itmes_checks h1 {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+
+  .check_titels .titels h1 {
+    font-size: 17px;
+  }
+
+  .check_titels .titels {
+    gap: 5px;
+  }
+
+  .span_i {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    font-size: 16px;
+  }
+
+  .flex_up_div .titles h1 {
+    font-size: 22px;
+  }
+
+  .flex_up_div img {
+    height: 100px;
+  }
+
+  .flex_up_div .titles {
+    gap: 10px;
+  }
+
+  .flex_up_div .titles p {
+    font-size: 17px;
+  }
+
+  .grid_img_activites {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .activty_img {
+    width: 110px;
+    height: 110px;
+    padding: 9px;
+  }
+
+  .activte_div h1 {
+    font-size: 18px;
+  }
+
+  .h1_color {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  .section_marg {
+    margin-top: 35px;
+  }
+
+  .slider_blog {
+    gap: 30px;
+    padding: 10px 30px 30px 30px;
+  }
+
+  .flex_swiper_buttons {
+    bottom: 30px;
+  }
+
+  .persons_img {
+    width: 350px;
+    min-width: 350px;
+  }
+
+  .flex_blog_book .book_items img {
+    margin-top: -80px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width:992px) {
+  .support_section .left_side img {
+    height: 250px;
+  }
+
+  .support_section .left_side h2 {
+    font-size: 18px;
+  }
+
+  .support_section .right_side h1 {
+    font-size: 19px;
+  }
+
+  .support_section .left_side {
+    width: 280px;
+  }
+
+  .support_section .right_side {
+    gap: 5px;
+  }
+
+  .support_section .right_side p {
+    width: 400px;
+  }
+
+  .grid_img_activites {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 25px;
+  }
+
+  .slider_blog .titels h1 {
+    font-size: 19px;
+  }
+
+  .slider_blog .titels h2 {
+    font-size: 18px;
+  }
+
+  .slider_blog .titels .description {
+    font-size: 17px;
+  }
+
+  .slider_blog .titels {
+    gap: 10px;
+  }
+
+  .flex_blog_book {
+    flex-direction: column;
+  }
+
+  .flex_blog_book .book_items img {
+    margin-top: -40px;
+    margin-right: auto;
+  }
+
+  .book_titling {
+    padding-bottom: 20px;
+  }
+
+  .persons_img {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .flex_blog_book {
+    gap: 25px;
+    margin-top: 70px;
   }
 }
 
@@ -2592,38 +2967,57 @@ input[type=number] {
     border-radius: 15px;
   }
 
-}
-
-@media (max-width:700px) {
-  .flex_up {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+  .grid_content_footer {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid_img .big_img {
+  .slider_blog_bg {
+    border-radius: 0px 80px 0px 0px;
     width: 100%;
-    min-width: unset;
-    height: auto;
   }
 
-  .grid_img .small_img {
-    width: 180px;
-    height: 180px;
+  .flex_swiper_buttons {
+    right: 30px;
   }
 
-  .content_hero_section {
-    align-items: center;
-  }
-
-  .bg_Register_now {
-    width: 70%;
-  }
-
-  .content_hero_section h2 {
-    text-align: center;
+  .flex_swiper_buttons .next_button,
+  .flex_swiper_buttons .prev_button {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
   }
 }
+
+@media (max-width:800px) {
+
+  .ref_details .name_card,
+  .ref_details .show_details {
+    padding: 10px 0px;
+  }
+
+  .card_content .p_details {
+    font-size: 16px;
+  }
+
+  .ref_details .name_card,
+  .ref_details .show_details {
+    font-size: 17px;
+  }
+
+  .slider_blog .titels h2 {
+    font-size: 17px;
+  }
+
+  .slider_blog .titels .description {
+    font-size: 16px;
+  }
+
+  .slider_blog .titels h1 {
+    font-size: 18px;
+  }
+
+}
+
 
 @media (max-width:768px) {
   .bg_section_content {
@@ -2661,6 +3055,183 @@ input[type=number] {
     padding-bottom: 15px;
   }
 
+  .support_section {
+    gap: 20px;
+  }
+
+  .support_section .left_side img {
+    height: 200px;
+  }
+
+  .support_section {
+    flex-direction: column-reverse;
+  }
+
+  .support_section .right_side {
+    align-items: center;
+  }
+
+  .support_section .left_side {
+    width: 100%;
+  }
+
+  .support_section .right_side p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .paltform_content {
+    padding: 10px 12px;
+  }
+
+  .logo_school {
+    padding: 2px 8px;
+    height: 45px;
+  }
+
+  .flex_platformes {
+    gap: 12px;
+    margin-top: 25px;
+
+  }
+
+  .paltform_content h3 {
+    font-size: 17px;
+  }
+
+  .paltform_content p {
+    font-size: 16px;
+  }
+
+  .paltform_content h3 {
+    padding-bottom: 5px;
+  }
+
+  .grid_content_footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .content_itmes_checks h1 {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  .check_titels .titels h1 {
+    font-size: 16px;
+  }
+
+  .check_titels .titels p {
+    font-size: 15px;
+  }
+
+  .flex_itms_div {
+    flex-direction: column;
+  }
+
+  .flex_up_div .titles h1 {
+    font-size: 19px;
+  }
+
+  .flex_up_div .titles {
+    gap: 5px;
+  }
+
+  .flex_up_div img {
+    height: 80px;
+  }
+
+  .activte_div h1 {
+    font-size: 17px;
+  }
+
+  .activty_img {
+    width: 90px;
+    height: 90px;
+    padding: 7px;
+
+  }
+
+  .activte_div p {
+    font-size: 15px;
+  }
+
+  .h1_color {
+    font-size: 17px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .flex_swiper_buttons {
+    bottom: 5px;
+  }
+
+}
+
+@media (max-width:700px) {
+  .flex_up {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .grid_img .big_img {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+  }
+
+  .grid_img .small_img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .content_hero_section {
+    align-items: center;
+  }
+
+  .bg_Register_now {
+    width: 70%;
+  }
+
+  .content_hero_section h2 {
+    text-align: center;
+  }
+
+  .flex_platformes {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .paltform_content p {
+    font-size: 18px;
+  }
+
+  .paltform_content h3 {
+    font-size: 18px;
+  }
+
+  .logo_school {
+    padding: 2px 15px;
+    height: 55px;
+  }
+
+  .slider_blog_bg {
+    border-radius: 0px 30px 0px 0px;
+  }
+
+  .slider_blog .titels h2 {
+    font-size: 16px;
+  }
+
+  .slider_blog {
+    gap: 15px;
+    padding: 10px 30px 50px 30px;
+  }
+
+  .slider_blog .titels .description {
+    font-size: 15px;
+  }
 }
 
 @media (max-width:576px) {
@@ -2730,6 +3301,186 @@ input[type=number] {
     height: 50px;
   }
 
+  .Educational_platforms h1 {
+    font-size: 17px;
+  }
+
+  .small_icon_titel {
+    width: 80px;
+    height: 80px;
+    padding: 7px;
+  }
+
+  .small_icon_titel span {
+    font-size: 16px;
+  }
+
+  .who_benfit .main_titel {
+    font-size: 18px;
+  }
+
+  .grid_benfits {
+    gap: 25px;
+    margin-top: 20px;
+
+  }
+
+  .right_postion {
+    height: 35px;
+    right: -63px;
+  }
+
+  .col_footer_logo {
+    gap: 10px;
+  }
+
+  .col_footer .main_footer_title {
+    font-size: 16px;
+  }
+
+  .col_footer_logo p {
+    font-size: 15px;
+  }
+
+  .ul_content a {
+    font-size: 15px;
+  }
+
+  .main_footer_title {
+    font-size: 16px;
+  }
+
+  .socail_icons {
+    gap: 10px;
+  }
+
+  .col_footer_logo img {
+    height: 60px;
+  }
+
+  .content_itmes_checks h1 {
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+
+  .right_img img {
+    height: 350px;
+    border-radius: 5px;
+  }
+
+  .back-to-top {
+    width: 35px;
+    height: 35px;
+  }
+
+  .flex_up_div .titles h1 {
+    font-size: 18px;
+  }
+
+  .flex_up_div .titles p {
+    font-size: 16px;
+  }
+
+  .flex_up_div img {
+    height: 70px;
+  }
+
+  .grid_img_activites {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+  }
+
+  .activty_img {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+
+  .slider_blog .img_slider img {
+    border-radius: 0px 30px 0px 0px;
+    margin-top: unset;
+  }
+
+  .slider_blog {
+    flex-direction: column;
+  }
+
+  .slider_blog .titels {
+    align-items: center;
+  }
+
+  .slider_blog .titels h2 {
+    font-size: 17px;
+  }
+
+  .slider_blog .titels .description {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .slider_blog {
+    gap: 10px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: unset;
+    left: unset;
+  }
+
+  .flex_swiper_buttons {
+    width: 100%;
+    right: unset;
+    justify-content: center;
+  }
+
+  .slider_blog {
+    padding: 10px 15px 50px 15px;
+  }
+
+  .blog_slidre {
+    padding-top: 0;
+  }
+
+  .flex_pattern_titel h1 {
+    font-size: 19px;
+  }
+
+  .flex_pattern_titel img {
+    height: 20px;
+  }
+
+  .flex_blog_book .book_items .book_description {
+    font-size: 16px;
+  }
+
+  .flex_blog_book .book_titling h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .flex_blog_book {
+    gap: 20px;
+
+  }
+}
+
+@media (max-width:500px) {
+  .flex_blog_book .book_items::after {
+    width: 50%;
+  }
+
+  .flex_blog_book .book_titling h2 {
+    padding-right: 30px;
+  }
+
+  .flex_blog_book .book_items img {
+    height: 60px;
+    margin-top: -28px;
+  }
+
 }
 
 @media (max-width:450px) {
@@ -2747,7 +3498,7 @@ input[type=number] {
   }
 
   .h1_style {
-    font-size: 19px;
+    font-size: 18px;
     padding-bottom: 10px;
   }
 
@@ -2792,6 +3543,135 @@ input[type=number] {
   .advantage_card .img_div img {
     height: 40px;
   }
+
+  .support_section .left_side h2 {
+    font-size: 17px;
+  }
+
+  .support_section .right_side h1 {
+    font-size: 18px;
+  }
+
+  .support_section .right_side p {
+    font-size: 17px;
+  }
+
+  .paltform_content h3 {
+    font-size: 17px;
+  }
+
+  .paltform_content p {
+    font-size: 17px;
+  }
+
+  .small_icon_titel span {
+    font-size: 15px;
+  }
+
+  .grid_content_footer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .socail_icons a {
+    width: 26px;
+    height: 26px;
+  }
+
+  .socail_icons a i {
+    font-size: 15px;
+  }
+
+  .breddcramb {
+    padding: 12px 0px 12px 0px;
+    gap: 5px;
+    font-size: 15px;
+  }
+
+  .activte_div h1 {
+    font-size: 16px;
+  }
+
+  .h1_color {
+    font-size: 16px;
+
+  }
+
+  .flex_up_div {
+    gap: 15px;
+  }
+
+  .grid_img_activites {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex_up_div img {
+    height: 60px;
+  }
+
+  .item1 {
+    grid-column: 1 / 7;
+    grid-row: 1 / 3;
+  }
+
+  .item2 {
+    grid-column: 7 / 13;
+    grid-row: 1 / 3;
+  }
+
+  .item3 {
+    grid-column: 1 / 13;
+    grid-row: 3 / 6;
+  }
+
+  .item4 {
+    grid-column: 1 / 7;
+    grid-row: 6 / 8;
+  }
+
+  .item5 {
+    grid-column: 7 / 13;
+    grid-row: 6 / 8;
+  }
+
+  .flex_swiper_buttons .next_button,
+  .flex_swiper_buttons .prev_button {
+    font-size: 17px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    font-size: 17px;
+  }
+
+  .slider_blog .titels h1 {
+    font-size: 17px;
+  }
+
+  .flex_blog_book .book_items::after {
+    width: 100%;
+  }
+
+  .book_dive {
+    width: 100%;
+  }
+
+  .flex_blog_book .book_items img {
+    margin-right: unset;
+  }
+
+  .flex_blog_book .book_titling h2 {
+    padding-right: 50px;
+  }
+
+  .flex_blog_book {
+    gap: 15px;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width:375px) {
@@ -2805,7 +3685,7 @@ input[type=number] {
   }
 
   .h1_style {
-    font-size: 18px;
+    font-size: 17px;
     padding-bottom: 7px;
   }
 
@@ -2815,11 +3695,6 @@ input[type=number] {
 
   .up_part {
     margin-bottom: 20px;
-  }
-
-  .back-to-top {
-    width: 38px;
-    height: 38px;
   }
 
   .content_hero_section h1 {
@@ -2849,5 +3724,137 @@ input[type=number] {
 
   .bg_section_content p {
     font-size: 15px;
+  }
+
+  .h1_style {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .support_section .left_side img {
+    height: auto;
+  }
+
+  .support_section .right_side h1 {
+    font-size: 17px;
+  }
+
+  .support_section .right_side p {
+    font-size: 16px;
+  }
+
+  .support_section .left_side h2 {
+    font-size: 16px;
+  }
+
+  .logo_school {
+    padding: 2px 10px;
+    height: 50px;
+  }
+
+  .paltform_content p {
+    font-size: 16px;
+  }
+
+  .paltform_content h3 {
+    font-size: 16px;
+  }
+
+  .paltform_content {
+    border-radius: 5px;
+  }
+
+  .grid_benfits {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .last_postion {
+    height: 40px;
+    left: -21px;
+  }
+
+  .left_postion {
+    left: -25px;
+    height: 50px !important;
+  }
+
+  .right_img img {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .check_titels .titels h1 {
+    font-size: 15px;
+  }
+
+  .flex_up_div .titles h1 {
+    font-size: 16px;
+  }
+
+  .flex_up_div .titles p {
+    font-size: 15px;
+  }
+
+  .flex_up_div img {
+    height: 50px;
+  }
+
+  .activte_div p {
+    font-size: 14px;
+  }
+
+  .activte_div h1 {
+    font-size: 15px;
+  }
+
+  .h1_color {
+    font-size: 15px;
+  }
+
+  .activty_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .item1 {
+    grid-column: 1 / 13;
+    grid-row: auto;
+  }
+
+  .item2 {
+    grid-column: 1 / 13;
+    grid-row: auto;
+  }
+
+  .item3 {
+    grid-column: 1 / 13;
+    grid-row: auto;
+  }
+
+  .item4 {
+    grid-column: 1 / 13;
+    grid-row: auto;
+  }
+
+  .item5 {
+    grid-column: 1 / 13;
+    grid-row: auto;
+  }
+
+  .slider_blog .titels h2 {
+    font-size: 16px;
+  }
+
+  .slider_blog .titels .description {
+    font-size: 15px;
+  }
+
+  .flex_blog_book .book_items .book_description {
+    font-size: 15px;
+  }
+
+  .flex_blog_book .book_titling h2 {
+    font-size: 17px;
   }
 }
