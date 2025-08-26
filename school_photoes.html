@@ -33,9 +33,12 @@
         <div class="container-fluid">
             <div class="content_section">
                 <div class="header">
-                    <a href="index.html" class="ref_logo">
-                        <img src="assets/img/logo.png">
-                    </a>
+                    <div class="logo_btn">
+                        <a href="index.html" class="ref_logo">
+                            <img src="assets/img/logo.png">
+                        </a>
+                        <a class="btn_menu"><i class="bi bi-list"></i></a>
+                    </div>
                     <ul class="center_menue">
                         <li><a href="index.html" class="ref_url active">الرئيسية</a></li>
                         <li>
@@ -199,8 +202,6 @@
 
         </div>
 
-
-
         <!-- footer -->
         <div class="footer_section">
             <div class="container">
@@ -258,64 +259,72 @@
                                 <a href="#"><i class="bi bi-instagram"></i></a>
                                 <a href="#"><i class="bi bi-snapchat"></i></a>
                             </div>
-                           <div class="iframe_div">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.127395742995!2d43.637086924133!3d26.12738889339713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15823da4c5866fb7%3A0xa447b5c7b1e46d13!2z2YXYr9in2LHYsyDZhdmG2KfZh9mEINin2YTYqNmD2YrYsdmK2Kkg2KfZhNij2YfZhNmK2Kkg2YjYp9mE2LnYp9mE2YXZitip!5e0!3m2!1sar!2seg!4v1755698278342!5m2!1sar!2seg"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            <div class="iframe_div">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.127395742995!2d43.637086924133!3d26.12738889339713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15823da4c5866fb7%3A0xa447b5c7b1e46d13!2z2YXYr9in2LHYsyDZhdmG2KfZh9mEINin2YTYqNmD2YrYsdmK2Kkg2KfZhNij2YfZhNmK2Kkg2YjYp9mE2LnYp9mE2YXZitip!5e0!3m2!1sar!2seg!4v1755698278342!5m2!1sar!2seg"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
+
+        <!-- mobile_menue -->
+        <nav class="header__menu--navigation ">
+            <div class="menu-backdrop"></div>
+            <ul class="header__menu--wrapper d-flex">
+                <div class="btn_close">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+                <li class="header__menu--items">
+                    <a class="header__menu--link active" href="index.html">الرئيسية
+                    </a>
+                </li>
+                <li class="header__menu--items">
+                    <a href="#" class="dropdown-toggle ref_dropDowen ref_url" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        نبذة عنا
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="manager.html">كلمة رئيس مجلس الإدارة</a></li>
+                        <li><a class="dropdown-item" href="vision.html">الرؤية والرسالة</a></li>
+                        <li><a class="dropdown-item" href="team_advantages.html">مزايا الإنضمام لفريقنا</a></li>
+                    </ul>
+                </li>
+                <li class="header__menu--items">
+                    <a class="header__menu--link" href="#">
+                        الأنشطة
+                    </a>
+                </li>
+                <li class="header__menu--items">
+                    <a class="header__menu--link" href="#">
+                        القبول والتسجيل
+                    </a>
+                </li>
+
+                <li class="header__menu--items">
+                    <a class="header__menu--link" href="#">
+                        رابط التوظيف
+                    </a>
+                </li>
+
+                <li class="header__menu--items contact-us-link">
+                    <a class="header__menu--link" href="#">الاخبار والمدونة</a>
+                </li>
+
+                <li class="header__menu--items contact-us-link">
+                    <a class="header__menu--link" href="#">تواصل معنا</a>
+                </li>
+            </ul>
+        </nav>
         <script src=" assets/js/plugins/jquery.min.js"> </script> <!-- JS + Popper -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
         <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-
-
-        <script>
-            $(window).on('scroll', function () {
-                if ($(this).scrollTop() > 20) {
-                    $("#back-top").addClass("show");
-                } else {
-                    $("#back-top").removeClass("show");
-                }
-            });
-
-            $(document).on('click', '#back-top', function () {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 800);
-                return false;
-            });
-        </script>
-
-        <script>
-            $(window).on('load', function () {
-                $(window).scrollTop(0);
-                $('.logo-loader').fadeOut(500, function () {
-                    $('.half.left').css('transform', 'translateX(-100%)');
-                    $('.half.right').css('transform', 'translateX(100%)');
-                    $('.loader').fadeOut(500);
-                });
-            });
-        </script>
-
-        <script>
-            window.addEventListener("scroll", function () {
-                if (window.scrollY >= 150) {
-                    document.body.classList.add("fixed_header");
-                } else {
-                    document.body.classList.remove("fixed_header");
-                }
-            });
-        </script>
-
-
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/vendor/script.js"></script>
 </body>
 
 </html>

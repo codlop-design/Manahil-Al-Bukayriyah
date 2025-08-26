@@ -226,6 +226,7 @@ hr {
 }
 
 
+
 .container-fluid {
   padding-right: 30px;
   padding-left: 30px;
@@ -234,6 +235,10 @@ hr {
 .container {
   max-width: 100%;
   padding: 0px 80px;
+}
+
+.mt-5 {
+  margin-top: 20px !important;
 }
 
 .mt-4 {
@@ -842,6 +847,46 @@ hr {
 .up_part p {
   font-size: 20px;
   text-align: center;
+}
+
+.hiden_div {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.flex_imges {
+  display: flex;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.brand_div img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.flex_imges .brand_div {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: scroll 10s linear infinite;
+  -webkit-animation: scroll 10s linear infinite;
+}
+
+.flex_imges:hover .brand_div {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 10px));
+  }
 }
 
 .clients_slider .slider_content img {
@@ -2402,6 +2447,62 @@ input[type=number] {
   z-index: -1;
 }
 
+.logo_btn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn_menu {
+  display: none;
+}
+
+.btn_close {
+  position: relative;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: left;
+  color: #3C3C3C;
+  display: none;
+}
+
+.menu-backdrop {
+  background: #3c3c3c94;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 900ms ease;
+  display: none;
+}
+
+.header__menu--wrapper .header__menu--items {
+  font-size: 17px;
+  padding-bottom: 20px;
+
+}
+
+.header__menu--wrapper .header__menu--items a {
+  color: rgba(114, 87, 39, 0.70);
+}
+
+.header__menu--items .header__menu--link.active {
+  color: #443417;
+}
+
+.header__menu--items .dropdown-menu.show {
+  top: 0px !important;
+  right: 38px !important;
+}
+
+/* my_responsive */
+
 @media (max-width:1400px) {
   .grid_img .big_img {
     width: 275px;
@@ -2513,6 +2614,36 @@ input[type=number] {
     height: 225px;
 
   }
+
+  .left_part {
+    gap: 20px;
+  }
+
+  .left_part .colum_images img {
+    width: 250px;
+    min-width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  .big_img img {
+    width: 450px;
+    min-width: 450px;
+    height: 450px;
+    border-radius: 20px;
+  }
+
+  .flex_team_section .right_part h1 {
+    font-size: 21px;
+  }
+
+  .flex_team_section .right_part {
+    gap: 15px;
+  }
+
+  .flex_team_section .right_part .team_description {
+    font-size: 18px;
+  }
 }
 
 @media (max-width:1260px) {
@@ -2520,7 +2651,6 @@ input[type=number] {
     width: 80%;
   }
 }
-
 
 @media (max-width:1200px) {
   .slider_blog .titels h1 {
@@ -2733,6 +2863,45 @@ input[type=number] {
 
   .content_itmes {
     gap: 5px;
+  }
+
+  .left_part .colum_images img {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  .big_img img {
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  .flex_team_section .right_part h1 {
+    font-size: 20px;
+  }
+
+  .flex_team_section .right_part .team_description {
+    font-size: 17px;
+  }
+
+  .ref_logo img {
+    height: 60px;
+  }
+
+  .center_menue {
+    gap: 12px;
+    font-size: 17px;
+  }
+
+  .contact_us {
+    font-size: 16px;
+  }
+
+  .dropdown-menu.show {
+    font-size: 16px;
   }
 }
 
@@ -3004,6 +3173,88 @@ input[type=number] {
 
   }
 
+  .school_img_div h1 {
+    padding-bottom: 15px;
+    font-size: 19px;
+  }
+
+  .grid_school_photoes .card_details .titels_img {
+    padding: 15px 5px;
+  }
+
+  .grid_school_photoes .card_details .titels_img h2 {
+    font-size: 18px;
+  }
+
+  .grid_school_photoes .card_details .titels_img span {
+    font-size: 16px;
+  }
+
+  .grid_school_photoes .card_details {
+    border-radius: 15px;
+  }
+
+  .grid_school_photoes .card_details img {
+    border-radius: 15px 15px 0px 0px;
+
+  }
+
+  .parent_dives {
+    gap: 30px;
+  }
+
+  .left_part .colum_images img {
+    width: 165px;
+    min-width: 165px;
+    height: 165px;
+    border-radius: 10px;
+  }
+
+  .big_img img {
+    width: 365px;
+    min-width: 365px;
+    height: 365px;
+    border-radius: 10px;
+  }
+
+  .left_part .colum_images {
+    gap: 15px;
+  }
+
+  .flex_team_section .right_part h1 {
+    font-size: 18px;
+  }
+
+  .flex_team_section .right_part .team_description {
+    font-size: 16px;
+  }
+
+  .flex_team_section {
+    gap: 15px;
+  }
+
+  .description_vision {
+    font-size: 17px;
+  }
+
+  .vision_content h1 {
+    font-size: 21px;
+  }
+
+  .icon_div {
+    width: 65px;
+    height: 65px;
+  }
+
+  .icon_div img {
+    height: 40px;
+  }
+
+  .vision_titel {
+    font-size: 23px;
+  }
+
+
 }
 
 @media (max-width:992px) {
@@ -3081,6 +3332,117 @@ input[type=number] {
 
   .up_contact__part h1 {
     font-size: 19px;
+  }
+
+  .grid_school_photoes {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    gap: 15px;
+  }
+
+  .flex_team_section {
+    flex-direction: column-reverse;
+  }
+
+  .flex_team_section .right_part {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .flex_team_section {
+    gap: 30px;
+  }
+
+  .flex_team_section .right_part .team_description {
+    text-align: center;
+  }
+
+  .center_menue {
+    display: none;
+  }
+
+  /* mobile_menue */
+  .btn_menu i {
+    font-size: 33px;
+    color: rgba(114, 87, 39, 0.70);
+  }
+
+  .header__menu .style3 {
+    position: relative;
+  }
+
+  .header__menu--wrapper {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 400px;
+    min-height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    padding: 0px 0px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: all 500ms ease 0ms;
+    -moz-transition: all 500ms ease 0ms;
+    -ms-transition: all 500ms ease 0ms;
+    -o-transition: all 500ms ease 0ms;
+    border-radius: 0px;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .header__menu--navigation.show_menu .header__menu--wrapper {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 500ms ease 0ms;
+    -moz-transition: all 500ms ease 0ms;
+    -ms-transition: all 500ms ease 0ms;
+    -o-transition: all 500ms ease 0ms;
+
+  }
+
+  .btn_menu {
+    display: block;
+
+  }
+
+  .header__menu--navigation {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    z-index: 999999;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 500ms ease 0ms;
+    -moz-transition: all 500ms ease 0ms;
+    -ms-transition: all 500ms ease 0ms;
+    -o-transition: all 500ms ease 0ms;
+
+  }
+
+  .header__menu--navigation.show_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 500ms ease 0ms;
+    -moz-transition: all 500ms ease 0ms;
+    -ms-transition: all 500ms ease 0ms;
+    -o-transition: all 500ms ease 0ms;
+  }
+
+  .btn_close {
+    display: block;
+  }
+
+  .menu-backdrop {
+    display: block;
   }
 }
 
@@ -3420,6 +3782,27 @@ input[type=number] {
     font-size: 15px;
     padding: 12px 10px;
     width: 80%;
+  }
+
+  .grid_school_photoes {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .school_img_div h1 {
+    font-size: 18px;
+  }
+
+  .grid_school_photoes .card_details .titels_img h2 {
+    font-size: 17px;
+  }
+
+  .vision_content {
+    gap: 10px;
+  }
+
+  .vision_content.last_vision {
+    align-items: center;
   }
 }
 
@@ -3798,6 +4181,96 @@ input[type=number] {
     min-width: 190px;
     height: 190px;
   }
+
+  .news_details_description {
+    font-size: 15px;
+  }
+
+  .arrow_titel span {
+    font-size: 16px;
+  }
+
+  .name_date {
+    font-size: 16px;
+  }
+
+  .news_img_name img {
+    border-radius: 5px;
+  }
+
+  .colorde_div {
+    font-size: 14px;
+    padding: 9px 6px;
+    width: 100%;
+  }
+
+  .news_details_section {
+    gap: 15px;
+  }
+
+  .arrow_titel img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .grid_school_photoes .card_details .titels_img span {
+    font-size: 15px;
+  }
+
+  .parent_dives {
+    gap: 20px;
+  }
+
+  .flex_team_section .right_part h1 {
+    font-size: 17px;
+  }
+
+  .flex_team_section .right_part .team_description {
+    font-size: 15px;
+  }
+
+  .big_img img {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 5px;
+  }
+
+  .left_part .colum_images img {
+    width: 130px;
+    min-width: 130px;
+    height: 130px;
+    border-radius: 5px;
+  }
+
+  .flex_team_section {
+    gap: 20px;
+  }
+
+  .mt-5 {
+    margin-top: 10px !important;
+  }
+
+  .icon_div {
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon_div img {
+    height: 35px;
+  }
+
+  .vision_content h1 {
+    font-size: 20px;
+  }
+
+  .description_vision {
+    font-size: 16px;
+  }
+
+  .vision_titel {
+    font-size: 19px;
+  }
 }
 
 @media (max-width:500px) {
@@ -3814,39 +4287,17 @@ input[type=number] {
     margin-top: -28px;
   }
 
-
   .pattern_img {
     height: 610px;
   }
 
-}
-
-@media (max-width:400px) {
-
-  .img_manger img {
-    width: 175px;
-    min-width: 175px;
-    height: 175px;
-  }
-
-  .content_itmes h1 {
-    font-size: 17px;
-  }
-
-  .h3_style {
-    font-size: 16px;
-  }
-
-  .manger_name {
-    font-size: 16px;
-  }
-
-  .pattern_img {
-    height: 670px;
-
+  .left_part {
+    gap: 10px;
   }
 
 }
+
+
 
 @media (max-width:450px) {
   .grid_img .small_img {
@@ -4068,6 +4519,111 @@ input[type=number] {
 
   .up_contact__part p {
     font-size: 15px;
+  }
+
+  .grid_school_photoes {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 15px;
+  }
+
+  .grid_school_photoes .card_details img {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .grid_school_photoes .card_details {
+    border-radius: 5px;
+  }
+
+  .school_img_div h1 {
+    font-size: 16px;
+  }
+
+  .left_part .colum_images {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left_part .colum_images img {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+  }
+
+  .big_img img {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+  }
+
+  .left_part {
+    flex-direction: column;
+  }
+
+  .flex_team_section .right_part h1 {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0px 20px;
+  }
+
+  .vision_content h1 {
+    font-size: 19px;
+  }
+
+  .vision_content h1 {
+    font-size: 18px;
+  }
+
+  .description_vision {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width:400px) {
+
+  .img_manger img {
+    width: 175px;
+    min-width: 175px;
+    height: 175px;
+  }
+
+  .content_itmes h1 {
+    font-size: 17px;
+  }
+
+  .h3_style {
+    font-size: 16px;
+  }
+
+  .manger_name {
+    font-size: 16px;
+  }
+
+  .pattern_img {
+    height: 670px;
+
+  }
+
+  .news_img_name {
+    gap: 10px;
+  }
+
+  .coloum_div {
+    gap: 8px;
+  }
+
+  .name_date {
+    font-size: 15px;
+  }
+
+  .arrow_titel span {
+    font-size: 15px;
+  }
+
+  .grid_school_photoes .card_details .titels_img h2 {
+    font-size: 16px;
   }
 }
 

@@ -33,9 +33,12 @@
         <div class="container-fluid">
             <div class="content_section">
                 <div class="header">
-                    <a href="index.html" class="ref_logo">
-                        <img src="assets/img/logo.png">
-                    </a>
+                    <div class="logo_btn">
+                        <a href="index.html" class="ref_logo">
+                            <img src="assets/img/logo.png">
+                        </a>
+                        <a class="btn_menu"><i class="bi bi-list"></i></a>
+                    </div>
                     <ul class="center_menue">
                         <li><a href="index.html" class="ref_url active">الرئيسية</a></li>
                         <li>
@@ -100,8 +103,6 @@
             </div>
 
         </div>
-
-
 
         <!-- footer -->
         <div class=" footer_section">
@@ -181,53 +182,62 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- mobile_menue -->
+                        <nav class="header__menu--navigation ">
+                            <div class="menu-backdrop"></div>
+                            <ul class="header__menu--wrapper d-flex">
+                                <div class="btn_close">
+                                    <i class="bi bi-x-circle"></i>
+                                </div>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link active" href="index.html">الرئيسية
+                                    </a>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a href="#" class="dropdown-toggle ref_dropDowen ref_url" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        نبذة عنا
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="manager.html">كلمة رئيس مجلس الإدارة</a></li>
+                                        <li><a class="dropdown-item" href="vision.html">الرؤية والرسالة</a></li>
+                                        <li><a class="dropdown-item" href="team_advantages.html">مزايا الإنضمام
+                                                لفريقنا</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">
+                                        الأنشطة
+                                    </a>
+                                </li>
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">
+                                        القبول والتسجيل
+                                    </a>
+                                </li>
+
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="#">
+                                        رابط التوظيف
+                                    </a>
+                                </li>
+
+                                <li class="header__menu--items contact-us-link">
+                                    <a class="header__menu--link" href="#">الاخبار والمدونة</a>
+                                </li>
+
+                                <li class="header__menu--items contact-us-link">
+                                    <a class="header__menu--link" href="#">تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <script src=" assets/js/plugins/jquery.min.js"> </script> <!-- JS + Popper -->
                         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
                         </script>
                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
                         <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-
-
-                        <script>
-                            $(window).on('scroll', function () {
-                                if ($(this).scrollTop() > 20) {
-                                    $("#back-top").addClass("show");
-                                } else {
-                                    $("#back-top").removeClass("show");
-                                }
-                            });
-
-                            $(document).on('click', '#back-top', function () {
-                                $('html, body').animate({
-                                    scrollTop: 0
-                                }, 800);
-                                return false;
-                            });
-                        </script>
-
-                        <script>
-                            $(window).on('load', function () {
-                                $(window).scrollTop(0);
-                                $('.logo-loader').fadeOut(500, function () {
-                                    $('.half.left').css('transform', 'translateX(-100%)');
-                                    $('.half.right').css('transform', 'translateX(100%)');
-                                    $('.loader').fadeOut(500);
-                                });
-                            });
-                        </script>
-
-                        <script>
-                            window.addEventListener("scroll", function () {
-                                if (window.scrollY >= 150) {
-                                    document.body.classList.add("fixed_header");
-                                } else {
-                                    document.body.classList.remove("fixed_header");
-                                }
-                            });
-                        </script>
-
-
-                        <script src="assets/js/script.js"></script>
+                        <script src="assets/js/vendor/script.js"></script>
 </body>
 
 </html>
