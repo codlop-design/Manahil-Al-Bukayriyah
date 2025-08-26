@@ -1358,7 +1358,7 @@ hr {
 
 .description {
   color: #374151;
-  line-height: 190%;
+  line-height: 160%;
   font-size: 18px;
   padding-top: 20px;
 }
@@ -1854,7 +1854,7 @@ hr {
 .contact_us_section {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 
 .up_contact__part {}
@@ -1876,7 +1876,7 @@ hr {
 }
 
 .inputs_section {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .inputs_section .form_style {
@@ -1949,10 +1949,12 @@ input[type=number] {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .p_styles img {
-  height: 25px;
+  height: 20px;
   object-fit: contain;
 }
 
@@ -1972,7 +1974,7 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   height: 300px;
   border-radius: 20px;
   border-bottom: 10px solid #F8ECDD;
@@ -1980,6 +1982,7 @@ input[type=number] {
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
+  padding: 10px;
 }
 
 .phone_div::before {
@@ -2003,6 +2006,7 @@ input[type=number] {
 .phone_div .phone_bg {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .phone_bg {
@@ -2045,21 +2049,22 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 12px;
+  padding: 14px 10px;
   border-radius: 0px 20px 20px 0px;
-  gap: 15px;
+  gap: 10px;
+  z-index: 999;
 }
 
 .fixed_socail_icons a {
   background: #5e4823;
   color: #fff;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .map_title {
@@ -2082,7 +2087,7 @@ input[type=number] {
 }
 
 .map_ifram {
-  margin-top: 30px;
+  margin-top: 20px;
   border-radius: 10px;
 }
 
@@ -2445,6 +2450,69 @@ input[type=number] {
     width: 400px;
     min-width: 400px;
   }
+
+  .phone_div h1 {
+    font-size: 19px;
+  }
+
+  .phone_bg {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .phone_div .number {
+    font-size: 20px;
+  }
+
+  .map_title span {
+    font-size: 20px;
+  }
+
+  .map_title i {
+    font-size: 26px;
+  }
+
+  .contact_us_icons {
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content_itmes h1 {
+    font-size: 21px;
+  }
+
+  .content_itmes {
+    gap: 10px;
+  }
+
+  .manger_name {
+    font-size: 19px;
+  }
+
+  .description {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+
+  .manger_name::after {
+    bottom: -15px;
+  }
+
+  .flex_itms {
+    gap: 25px;
+    padding: 0px 25px;
+  }
+
+  .img_manger img {
+    width: 225px;
+    min-width: 225px;
+    height: 225px;
+
+  }
 }
 
 @media (max-width:1260px) {
@@ -2470,6 +2538,66 @@ input[type=number] {
   .slider_blog .titels .description {
     font-size: 18px;
 
+  }
+
+  .blog_titels h1 {
+    font-size: 17px;
+  }
+
+  .blog_titels h2 {
+    font-size: 16px;
+  }
+
+  .detail_button {
+    font-size: 16px;
+  }
+
+  .blog_main_title {
+    font-size: 22px;
+  }
+
+  .grid_blogs {
+    margin-top: 20px;
+  }
+
+  .blog_titels {
+    gap: 5px;
+  }
+
+  .up_contact__part h1 {
+    font-size: 21px;
+  }
+
+  .up_contact__part p {
+    font-size: 17px;
+  }
+
+  .message_btn {
+    width: 20%;
+  }
+
+  .phone_div h1 {
+    font-size: 17px;
+  }
+
+  .grid_section_phones {
+    gap: 15px;
+  }
+
+  .content_itmes .description {
+    padding-top: 7px;
+  }
+
+  .manger_name::after {
+    bottom: -10px;
+  }
+
+  .manger_name {
+    font-size: 18px;
+  }
+
+  .content_itmes h1 {
+    font-size: 20px;
   }
 }
 
@@ -2597,6 +2725,14 @@ input[type=number] {
   .flex_blog_book .book_items img {
     margin-top: -115px;
     margin-right: 60px;
+  }
+
+  .content_itmes .description {
+    padding-top: 10px;
+  }
+
+  .content_itmes {
+    gap: 5px;
   }
 }
 
@@ -2815,6 +2951,59 @@ input[type=number] {
     margin-top: -80px;
     margin-right: 60px;
   }
+
+  .grid_blogs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 20px;
+  }
+
+  .grid_section_phones {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .flex_itms {
+    flex-direction: column;
+    padding: 0px 15px;
+    gap: 15px;
+  }
+
+  .pattern_img {
+    height: 520px;
+  }
+
+  .arrow_titel img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrow_titel span {
+    font-size: 17px;
+  }
+
+  .news_img_name img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .coloum_div {
+    gap: 12px;
+  }
+
+  .news_details_description {
+    font-size: 18px;
+  }
+
+  .colorde_div {
+    font-size: 16px;
+  }
+
+  .name_date {
+    font-size: 17px;
+
+  }
+
 }
 
 @media (max-width:992px) {
@@ -2884,6 +3073,14 @@ input[type=number] {
   .flex_blog_book {
     gap: 25px;
     margin-top: 70px;
+  }
+
+  .contact_us_section {
+    gap: 25px;
+  }
+
+  .up_contact__part h1 {
+    font-size: 19px;
   }
 }
 
@@ -2985,6 +3182,16 @@ input[type=number] {
     font-size: 18px;
     width: 30px;
     height: 30px;
+  }
+
+  .img_manger img {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+  }
+
+  .content_itmes h1 {
+    font-size: 19px;
   }
 }
 
@@ -3166,6 +3373,54 @@ input[type=number] {
     bottom: 5px;
   }
 
+  .grid_blogs {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+  }
+
+  .date_div .span_num {
+    font-size: 18px;
+  }
+
+  .date_div {
+    font-size: 16px;
+  }
+
+  .blog_titels {
+    padding: 12px;
+  }
+
+  .blog_main_title {
+    font-size: 20px;
+  }
+
+  .grid_section_phones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content_itmes .description {
+    padding-top: 0;
+    font-size: 15px;
+  }
+
+  .manger_name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .content_itmes h1 {
+    font-size: 18px;
+  }
+
+  .news_details_description {
+    font-size: 16px;
+  }
+
+  .colorde_div {
+    font-size: 15px;
+    padding: 12px 10px;
+    width: 80%;
+  }
 }
 
 @media (max-width:700px) {
@@ -3231,6 +3486,36 @@ input[type=number] {
 
   .slider_blog .titels .description {
     font-size: 15px;
+  }
+
+  .contact_us_icons {
+    margin-top: 15px;
+  }
+
+  .contact_us_icons {
+    gap: 12px;
+  }
+
+  .contact_us_icons .flex_p {
+    gap: 12px;
+  }
+
+  .message_btn {
+    font-size: 18px;
+  }
+
+  .map_title span {
+    font-size: 19px;
+  }
+}
+
+@media (max-width:600px) {
+  .h3_style {
+    font-size: 17px;
+  }
+
+  .manger_name {
+    font-size: 17px;
   }
 }
 
@@ -3465,6 +3750,54 @@ input[type=number] {
     gap: 20px;
 
   }
+
+  .blog_titels h1 {
+    font-size: 16px;
+  }
+
+  .grid_blogs {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 15px;
+  }
+
+  .phone_div h1 {
+    font-size: 16px;
+  }
+
+  .phone_bg {
+    font-size: 28px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .up_contact__part p {
+    font-size: 16px;
+  }
+
+  .inputs_section .form_style {
+    height: 40px;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+
+  .textare_style {
+    border-radius: 2px;
+  }
+
+  .message_btn {
+    width: 30%;
+    height: 38px;
+  }
+
+  .pattern_img {
+    height: 550px;
+  }
+
+  .img_manger img {
+    width: 190px;
+    min-width: 190px;
+    height: 190px;
+  }
 }
 
 @media (max-width:500px) {
@@ -3479,6 +3812,38 @@ input[type=number] {
   .flex_blog_book .book_items img {
     height: 60px;
     margin-top: -28px;
+  }
+
+
+  .pattern_img {
+    height: 610px;
+  }
+
+}
+
+@media (max-width:400px) {
+
+  .img_manger img {
+    width: 175px;
+    min-width: 175px;
+    height: 175px;
+  }
+
+  .content_itmes h1 {
+    font-size: 17px;
+  }
+
+  .h3_style {
+    font-size: 16px;
+  }
+
+  .manger_name {
+    font-size: 16px;
+  }
+
+  .pattern_img {
+    height: 670px;
+
   }
 
 }
@@ -3672,6 +4037,38 @@ input[type=number] {
     gap: 15px;
     margin-top: 50px;
   }
+
+  .blog_titels h2 {
+    font-size: 15px;
+  }
+
+  .grid_section_phones {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .map_title span {
+    font-size: 17px;
+  }
+
+  .map_title i {
+    font-size: 23px;
+  }
+
+  .map_ifram {
+    margin-top: 15px;
+  }
+
+  .contact_us_section {
+    gap: 20px;
+  }
+
+  .inputs_section .form_style {
+    font-size: 15px;
+  }
+
+  .up_contact__part p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width:375px) {
@@ -3857,4 +4254,25 @@ input[type=number] {
   .flex_blog_book .book_titling h2 {
     font-size: 17px;
   }
+
+  .detail_button {
+    font-size: 15px;
+  }
+
+  .up_contact__part p {
+    font-size: 15px;
+  }
+
+  .content_itmes h1 {
+    font-size: 16px;
+  }
+
+  .manger_name {
+    font-size: 15px;
+  }
+
+  .manger_name::after {
+    height: 4px;
+  }
+
 }
