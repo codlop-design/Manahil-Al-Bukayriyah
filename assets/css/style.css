@@ -871,8 +871,8 @@ hr {
   display: flex;
   align-items: center;
   gap: 10px;
-  animation: scroll 10s linear infinite;
-  -webkit-animation: scroll 10s linear infinite;
+  animation: scroll 5s linear infinite;
+  -webkit-animation: scroll 5s linear infinite;
 }
 
 .flex_imges:hover .brand_div {
