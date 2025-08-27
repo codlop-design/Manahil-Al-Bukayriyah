@@ -856,9 +856,18 @@ hr {
 }
 
 .flex_imges {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  height: 100%;
+  --gap: 1rem;
+  position: relative;
   display: flex;
-  direction: rtl;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  gap: var(--gap);
+  direction: ltr;
 }
 
 .brand_div img {
@@ -869,10 +878,12 @@ hr {
 .flex_imges .brand_div {
   flex-shrink: 0;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  animation: scroll 5s linear infinite;
-  -webkit-animation: scroll 5s linear infinite;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 50s linear infinite;
+  -webkit-animation: scroll 50s linear infinite;
+  animation-direction: reverse;
 }
 
 .flex_imges:hover .brand_div {
@@ -885,7 +896,7 @@ hr {
   }
 
   to {
-    transform: translateX(calc(-100% - 10px));
+    transform: translateX(calc(-100% - var(--gap)));
   }
 }
 
@@ -2371,6 +2382,7 @@ input[type=number] {
   z-index: -1;
   border-radius: 40px;
   width: 33.33%;
+  display: none;
 }
 
 
@@ -2390,7 +2402,7 @@ input[type=number] {
   height: 12px;
   border-radius: 12px;
   right: 18px;
-  top: -10px;
+  top: 13px;
   background: #725727;
 }
 
@@ -2532,6 +2544,10 @@ input[type=number] {
 
   .flex_blog_book .book_items .book_description {
     font-size: 18px;
+  }
+
+  .book_titling ::after {
+    top: 9px;
   }
 }
 
@@ -3254,6 +3270,51 @@ input[type=number] {
     font-size: 23px;
   }
 
+  .gride_school_imges {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    max-height: unset;
+  }
+
+  .gride_school_imges .grid_photoe:first-child {
+    grid-column: 1 / 8;
+    grid-row: 1 / 3;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(2) {
+    grid-column: 1 / 8;
+    grid-row: 3 / 5;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(3) {
+    grid-column: 8 / 12;
+    grid-row: 1 / 5;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(4) {
+    grid-column: 1 / 6;
+    grid-row: 5 / 7;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(5) {
+    grid-column: 6 / 12;
+    grid-row: 5 / 7;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(6) {
+    grid-column: 1 / 4;
+    grid-row: 7 /11;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(7) {
+    grid-column: 4 / 12;
+    grid-row: 7 / 9;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(8) {
+    grid-column: 4 / 12;
+    grid-row: 9/ 11;
+  }
 
 }
 
@@ -3890,6 +3951,10 @@ input[type=number] {
   .map_title span {
     font-size: 19px;
   }
+
+  .show_btn {
+    font-size: 16px;
+  }
 }
 
 @media (max-width:600px) {
@@ -4271,6 +4336,18 @@ input[type=number] {
   .vision_titel {
     font-size: 19px;
   }
+
+  .header__menu--wrapper {
+    width: 270px;
+  }
+
+  .brand_div img {
+    height: 35px;
+  }
+
+  .book_titling ::after {
+    top: 7px;
+  }
 }
 
 @media (max-width:500px) {
@@ -4293,6 +4370,10 @@ input[type=number] {
 
   .left_part {
     gap: 10px;
+  }
+
+  .flex_blog_book .book_titling h2 {
+    padding-right: 40px;
   }
 
 }
@@ -4579,6 +4660,64 @@ input[type=number] {
     font-size: 15px;
   }
 
+  .container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .contact_us {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+
+  .ref_logo img {
+    height: 50px;
+  }
+
+  .gride_school_imges {
+    grid-template-rows: repeat(16, 100px);
+  }
+
+  .gride_school_imges .grid_photoe:first-child {
+    grid-column: 1 / 12;
+    grid-row: 1 / 3;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(2) {
+    grid-column: 1 / 12;
+    grid-row: 3 / 5;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(3) {
+    grid-column: 1 / 12;
+    grid-row: 5 / 7;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(4) {
+    grid-column: 1 / 12;
+    grid-row: 7 / 9;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(5) {
+    grid-column: 1 / 12;
+    grid-row: 9 / 11;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(6) {
+    grid-column: 1 / 12;
+    grid-row: 11 / 13;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(7) {
+    grid-column: 1 / 12;
+    grid-row: 13 / 15;
+  }
+
+  .gride_school_imges .grid_photoe:nth-child(8) {
+    grid-column: 1 / 12;
+    grid-row: 15 / 17;
+  }
+
 }
 
 @media (max-width:400px) {
@@ -4680,7 +4819,7 @@ input[type=number] {
   }
 
   .h1_style {
-    font-size: 18px;
+    font-size: 17px;
     padding-bottom: 10px;
   }
 
@@ -4829,6 +4968,14 @@ input[type=number] {
 
   .manger_name::after {
     height: 4px;
+  }
+
+  .logo_btn {
+    gap: 10px;
+  }
+
+  .show_btn {
+    width: 120px;
   }
 
 }
