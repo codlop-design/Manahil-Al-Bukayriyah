@@ -2469,6 +2469,10 @@ input[type=number] {
   display: none;
 }
 
+.header__menu--navigation {
+  display: none;
+}
+
 .btn_close {
   position: relative;
   font-size: 25px;
@@ -2511,6 +2515,11 @@ input[type=number] {
 .header__menu--items .dropdown-menu.show {
   top: 0px !important;
   right: 38px !important;
+}
+
+
+body.fixed_header .header__menu--wrapper {
+  top: 73px !important;
 }
 
 /* my_responsive */
@@ -3423,6 +3432,11 @@ input[type=number] {
   }
 
   /* mobile_menue */
+
+  .header__menu--navigation {
+    display: block;
+  }
+
   .btn_menu i {
     font-size: 33px;
     color: rgba(114, 87, 39, 0.70);
@@ -4716,6 +4730,10 @@ input[type=number] {
   .gride_school_imges .grid_photoe:nth-child(8) {
     grid-column: 1 / 12;
     grid-row: 15 / 17;
+  }
+
+  .header__menu--wrapper .header__menu--items {
+    font-size: 16px;
   }
 
 }
